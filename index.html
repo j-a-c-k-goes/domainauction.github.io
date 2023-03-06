@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<title>Domain Auction</title>
+</head>
+<body>
+	
+	
+	<!-- Header w/ Navigation -->
+	<header>
+		<h1>Domain Auction</h1>
+		<p>Bid on the domain transfer rights to your new alias.</p>
+		<section class="account_details">
+			<section class="connect_account">
+				<button class="" id="connect_meta_mask" onclick="get_account()">Connect to MetaMask</button>
+				<p id="account_number"></p>
+			</section>
+		</section>
+		<!-- Auction Details -->
+		<div class="auction_details">
+			<h2>Auction Details</h2>
+			<p id="next_item_appearing">Next Item Appearing: 1 Minute</p>
+			<p id="auction_start_date">Start Date: 2023 03 02</p>
+			<p id="auction_end_date">End Date: 2023 03 04</p>
+			<p id="auction_time_until_close">Time Until Close: 48 Hours</p>
+		</div>
+		<!-- Bid Details -->
+		<div class="bid_details">
+			<h2>Bid Details</h2>
+			<section>
+				<p id="bid_current">Current bid: 0.00</p>
+				<p id="bid_lowest">Lowest Bid: 0.00</p>
+				<p id="bid_average">Average Bid: 0.00</p>
+				<p id="bid_history"></p>				
+				<p id="bids_made">Bids made: 0</p>
+				<p id="bids_won">Bids won: 0</p>
+			</section>
+		</div>
+
+		<!-- Item Details -->
+		<div class="item_details">
+			<h2>Item Details</h2>
+			<section>
+				<p id="item_name">Item Name: www.somewhere.com</p>
+				<p id="item_description">Description</p>
+				<p id="item_offer_price">Offer price: $10.00</p>				
+			</section>
+			<section class="item_buttons">
+				<button class="" id="">Show Another Item</button>
+				<button class="" id="">Save Item</button>
+			</section>
+		</div>
+		
+	</header>
+	<!-- Interface -->
+	<div class="main_interface">
+		<!-- Interaction Buttons -->
+		<div class="interaction_buttons">
+			<section>	
+				<h2 id="bid_item">bidding on: www.site.com</h2>
+				<label for="make_bid">Enter your bid</label>
+				<input type="number" name="">
+				<button class="" id="">Make Bid</button>
+			</section>
+			<section>
+				<label for="increasing_the_bid">Increase Your Bid</label>
+				<select if="bid_increase_intervals">
+					<option value="">5</option>
+					<option value="">10</option>
+					<option value="">15</option>
+					<option value="">20</option>
+					<option value="">50</option>
+					<option value="">100</option>
+				</select>
+				<button class="" id="">Increase Bid</button>
+				<button class="" id="">View bids</button>
+			</section>
+		</div>
+	</div>
+	<!-- Scripts -->
+	<!-- <script type="text/javascript" src="index.js"></script> -->
+	<script type="text/javascript" src="connect_to_meta_mask.js"></script>
+</body>
+</html>

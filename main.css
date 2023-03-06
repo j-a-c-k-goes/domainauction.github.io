@@ -1,0 +1,94 @@
+body {
+	font-family: 'JetBrains Mono', monospace;
+	line-height: 0.96;
+	text-transform: uppercase;
+}
+h1 {
+	font-size: 1.36rem;
+}
+h2 { 
+	font-size: 0.88rem;
+	font-weight: 800; 
+}
+
+#bid_item {
+	font-size: 1.08rem;
+	text-transform: uppercase;
+}
+header > * { 
+	padding: 20px; 
+}
+header{
+	overflow: scroll;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	width: 40%;
+	left: 0;
+	height: auto;
+/*	border: 1px solid black;*/
+}
+
+
+.item_buttons {
+/*	display:flex;*/
+/*	flex-direction: column;*/
+}
+.connect_account {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: row;
+}
+#account_number {
+	font-size: 0.88rem;
+}
+/**/
+.account_details{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+
+option,
+input, 
+button {
+	font-family: 'JetBrains Mono', monospace;
+	border: 1px solid black;
+	background: none;
+	padding: 12px;
+	width: auto;
+	margin: 8px;
+}
+
+input:focus,
+button:hover{
+	background: black;
+	color: white;
+}
+button:active{
+	scale: 0.96;
+}
+.interaction_buttons {
+	display: flex;
+	flex-direction: column;
+}
+.main_interface{
+	z-index: -1;
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	top: 0;
+	left: 40%;
+	text-align: center;
+	width: 60%;
+	height: 100%;
+	border-left: 1px solid black;
+/*	vertical-align: baseline;*/
+	align-items: center;
+	justify-content: space-evenly;
+}
